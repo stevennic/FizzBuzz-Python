@@ -3,6 +3,7 @@ import sys
 
 import pytest
 
+sys.path.append('../src/')
 from FizzBuzz import FizzBuzz
 
 # Canonical 3 Fizz / 5 Buzz instance for testing convenience

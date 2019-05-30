@@ -2,7 +2,11 @@
 To build an executable, make sure you have pyinstaller: 
 `pip install pyinstaller`
 
+# Test
 Testing requires pytest: `pip install pytest`
+
+To run all unit tests, `cd` to `test/` and run: `pytest test.py`
+
 # Build
 Windows:
 `build.bat [destination]`
