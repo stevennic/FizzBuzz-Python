@@ -5,7 +5,7 @@ class FizzBuzz:
             self.pairings = {}
         else:
             if isinstance(custom_pairings, dict):
-                invalid_keys = [key for key, _ in custom_pairings.items() if key < 1]
+                invalid_keys = [key for key in custom_pairings if key < 1]
                 if len(invalid_keys):
                     first_invalid_key = invalid_keys[0]
                     raise ValueError(f'Pairing keys must be positive integers. Found: {first_invalid_key}')
