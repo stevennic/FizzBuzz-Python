@@ -11,7 +11,7 @@ class FizzBuzz:
                     raise ValueError(f'Pairing keys must be positive integers. Found: {first_invalid_key}')
                 self.pairings = {key: value for key, value in sorted(custom_pairings.items())}  # Sort the pairings dictionary by key
             else:
-                raise TypeError(f'custom_pairings must be an OrderedDict. Found: {type(custom_pairings)}')
+                raise TypeError(f'custom_pairings must be of type dictionary. Found: {type(custom_pairings)}')
 
     def get_fizz_buzz(self, limit=100):
         if limit < 1:
